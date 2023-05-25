@@ -4,7 +4,7 @@ from pymysql import *
 
 # Делаем коннект к базе данных
 
-def show_data(cur):
+def show(cur):
     cur.execute('select * from goods')  # запустили запрос на сервере базы данных
     rows = cur.fetchall()  # получили все записи из таблицы
     # pprint(rows)
