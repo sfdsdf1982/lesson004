@@ -10,7 +10,7 @@ def show_data(cur):
     # pprint(rows)
     for item in rows:
         print(f"Автомобиль {item['title']} стоит {item['price']}")
-def update(cur):
+def update2(cur):
     info = input("Введите название авто и новую стоимость для этого авто через дефис\n").split("-")
     title = info[0]
     price = int(info[1])
